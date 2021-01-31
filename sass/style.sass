@@ -1,0 +1,165 @@
+@import 'normalize'
+@import 'fonts'
+
+$black: #000000
+$blue: #083C6E
+$lightBlue: #E0EDFF
+$grey: #C4C4C4
+$lightGrey: #E9E9E9
+
+
+//<Основные параметры>================================================================
+html
+    box-sizing: border-box
+
+*, *::before, *::after
+    box-sizing: inherit
+
+body
+    +regular
+    font-size: 18px
+    line-height: 28px
+    color: #747DA1
+    background-color: #ffffff
+
+li
+    list-style-type: none
+
+a 
+    text-decoration: none
+    
+.container
+    max-width: 1296px
+    margin: 0 auto
+
+.title  
+    +bold
+    font-size: 52px
+    line-height: 64px
+    color: #000000
+
+.subtitle  
+    +regular
+    font-size: 18px
+    line-height: 28px
+    color: #B1B6CA
+
+.btn
+    display: flex
+    align-items: center
+    text-align: center
+    font-family: +dmSans
+    font-size: 18px
+    line-height: 16px
+    color: $blue
+    letter-spacing: 0.1em
+    text-transform: uppercase
+    background-color: #fff
+    padding: 20px 50px
+
+
+    &--blue
+        color: #FFFFFF
+        background-color: $blue
+
+.image
+    width: 100%
+    height: 100%
+    object-fit: cover
+    position: absolute
+    top: 0
+    left: 0
+//</Основные параметры>================================================================
+.header 
+    min-height: 100vh
+    background: url('/img/header.jpg') no-repeat center
+    background-size: cover 
+
+    &__top
+        padding-top: 53px 
+
+    &__top-wrapper
+        display: flex
+        justify-content: space-between
+        align-content: start
+
+    &__top-list
+        display: flex
+        justify-content: space-between
+        align-content: center
+    
+    &__top-item
+        margin-right: 60px
+
+        &--active
+            border-bottom: 2px solid currentColor
+
+    &__top-item:last-child
+        margin-right: 0px
+
+    &__content-wrapper
+        margin-top: 212px
+        max-width: 460px
+
+    &__content-title
+        +boldRegular
+        font-size: 60px
+        line-height: 84px
+        letter-spacing: 0.1em
+        text-transform: uppercase
+        color: #000000
+
+    &__content-subtitle
+        margin-top: 5px
+
+    &__content-form
+        display: flex
+        justify-content: space-between
+        align-content: start
+        margin-top: 23px
+        
+
+    &__content-input
+        width: 100%
+        padding-left: 27px
+        background-color: #F1F1F1
+        color: #747DA1
+        border: 0px
+
+.kits
+
+    &__title
+        display: flex
+        justify-content: center
+        margin-top: 150px
+
+    &__cards
+        display: flex
+        justify-content: space-between
+        align-items: center
+        margin-top: 101px
+
+.square
+    position: relative
+
+    &__circles
+        display: flex
+        justify-content: space-between
+        flex-direction: row
+        //column-gap: 16.4
+        min-width: 
+
+    &__circle
+        width: 12px
+        height: 12px
+        background: #5B6876
+        border-radius: 50%
+        //top: 12px
+        //left: 16.4px
+
+
+    &__circle:nth-child(2n)
+        left: 30px
+    
+    &__circle:last-child
+        left: 48px
