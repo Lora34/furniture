@@ -18,8 +18,8 @@
                         <ul class="header__top-list">
                             <li class="header__top-item header__top-item--active"><a class='link' href="#!">Showroom</a></li>
                             <li class="header__top-item"><a class='link' href="#!">Product</a></li>
-                            <li class="header__top-item"><button class='btn btn--blue'>Contact</button></li>
                         </ul>
+                        <div class="header__top-btn"><button class='btn btn--blue'>Contact</button></div>
                     </div>
                 </div>
             </div>
@@ -27,12 +27,16 @@
         <div class="header__content">
             <div class="container">
                 <div class="header__content-wrapper">
-                    <div class="header__content-title title"><p>Good Living Better LIVE</p></div>
-                    <div class="header__content-subtitle subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam aliquam diam dictum mattis. </p></div>
-                    <div class="header__content-form">
-                        <input class="header__content-input" type="text" placeholder="Enter product name">
-                        <div class="btn btn--blue">Search</div>
-                    </div>
+                    <div class="header__content-title title"><p>Good Living <span class="header__content-span">Better LIVE</span></p></div>
+                    <div class="header__content-subtitle subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Diam aliquam diam dictum mattis.</p></div>
+                    <form class="header__form">
+                        <fieldset class="header__form-wrap">
+                            <p class="header__form-info">
+                                <input class="header__form-field" type="text" name="search" placeholder="Enter product name">
+                                <button class="btn btn--blue" type="submit">Search</button>
+                            </p>
+                        </fieldset>
+                    </form>
                 </div>
             </div>
         </div>
@@ -146,7 +150,9 @@
                 </div>
                 <div class="kits__cards">
                     <div class="kits__cards-card">
-                        <img class="kits__cards-img" src="img/kits1.jpg" alt="kit">
+                        <div class="kits__cards-img">
+                            <img class="kits__cards-pic" src="img/kits1.jpg" alt="kit">
+                        </div>
                         <div class="kits__cards-desc">
                             <h3 class="kits__cards-title">
                                 White Swan Chair
@@ -157,7 +163,9 @@
                         </div>
                     </div>
                     <div class="kits__cards-card">
-                        <img class="kits__cards-img" src="img/kits2.jpg" alt="kit">
+                        <div class="kits__cards-img">
+                            <img class="kits__cards-pic" src="img/kits2.jpg" alt="kit">
+                        </div>
                         <div class="kits__cards-desc">
                             <h3 class="kits__cards-title">
                                 Urban sofa set
@@ -168,7 +176,9 @@
                         </div>
                     </div>
                     <div class="kits__cards-card">
-                        <img class="kits__cards-img" src="img/kits3.jpg" alt="kit">
+                        <div class="kits__cards-img">
+                            <img class="kits__cards-pic" src="img/kits2.jpg" alt="kit">
+                        </div>
                         <div class="kits__cards-desc">
                             <h3 class="kits__cards-title">
                                 Big  Mono • Kitchen set
@@ -181,23 +191,14 @@
                 </div>
             </div>
         </section>
-        <section class="furniture">
+        <section class="video">
             <div class="container">
-                <div class="furniture__desc">
-                    <div class="furniture__title title"><h2>Furniture</h2></div>
-                    <div class="furniture__title subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta dui.</p></div>
-                    <div class="furniture__btn">
-                        <div class="btn btn--blue">ORder now</div>
-                    </div>
-                </div>
-                <div class="furniture__pic">
-                    <img class="furniture__pic-img furniture__pic-img--top" src="./img/furniture1.jpg" alt="furniture" >
-                    <img class="furniture__pic-img furniture__pic-img--bottom" src="./img/furniture2.jpg" alt="furniture" >
+                <div class="video__wrapper">
+                    <div class="video__item"></div>
+                    <iframe class="video__element" src="https://www.youtube.com/embed/L5_vyBTKxso" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                 </div>
             </div>
-        </section>
-        <section class="video">
-
+            
         </section>
         <section class="benefits">
             <div class="container">
@@ -210,22 +211,28 @@
                         <div class="benefits__card-pic">
                             <img src="./img/benefits1.svg" alt="benefits" class="benefits__card-img">
                         </div>
-                        <div class="benefits__card-title"><h3>Best Quality</h3></div>
+                        <div class="benefits__card-desc">
+                            <div class="benefits__card-title"><h3>Best Quality</h3></div>
                         <div class="benefits__card-subtitle"><p>All of our funiture uses the best&nbsp;materials and choices for our&nbsp;customers.</p></div>
+                        </div>
                     </div>
                     <div class="benefits__card">
                         <div class="benefits__card-pic">
                             <img src="./img/benefits2.svg" alt="benefits" class="benefits__card-img">
                         </div>
-                        <div class="benefits__card-title"><h3>Free Shipping</h3></div>
-                        <div class="benefits__card-subtitle"><p>All of our funiture uses the best&nbsp;materials and choices for our&nbsp;customers.</p></div>
+                        <div class="benefits__card-desc">
+                            <div class="benefits__card-title"><h3>Free Shipping</h3></div>
+                            <div class="benefits__card-subtitle"><p>All of our funiture uses the best&nbsp;materials and choices for our&nbsp;customers.</p></div>
+                        </div>
                     </div>
                     <div class="benefits__card">
                         <div class="benefits__card-pic">
                             <img src="./img/benefits3.svg" alt="benefits" class="benefits__card-img">
                         </div>
-                        <div class="benefits__card-title"><h3>Warranty</h3></div>
-                        <div class="benefits__card-subtitle"><p>All of our funiture uses the best&nbsp;materials and choices for our&nbsp;customers.</p></div>
+                        <div class="benefits__card-desc">
+                            <div class="benefits__card-title"><h3>Warranty</h3></div>
+                            <div class="benefits__card-subtitle"><p>All of our funiture uses the best&nbsp;materials and choices for our&nbsp;customers.</p></div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -234,8 +241,8 @@
             <div class="container">
                 <div class="experience__wrapper">
                     <div class="experience__pics">
-                        <div class="experience__sale"></div>
-                        <div class="experience__square"></div>
+                        <div class="experience__sale"><img src="./img/experience.svg" alt="experience"></div>
+                        <div class="experience__square"><img src="./img/experience1.jpg" alt="experience"></div>
                         <div class="experience__pattern">
                             <div class="square">
                                 <div class="square__circles">
@@ -339,59 +346,70 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="experience__circle"></div>
+                        <div class="experience__circle">
+                            <img class="experience__circle-top" src="./img/experience4.jpg" alt="experience">
+                            <img class="experience__circle-bottom" src="./img/experience2.jpg" alt="experience"></div>
                     </div>
                     <div class="experience__desc">
-                        <div class="experience__desc-text test"><p>Simple & Modern</p></div>
-                        <div class="experience__desc-title title"><h2>Benefits You Get When&nbsp;Using Our Services</h2></div>
+                        <div class="experience__desc-text test"><p>Luxroom Modern</p></div>
+                        <div class="experience__desc-title title"><h2>We Provide You The&nbsp;Best Experience</h2></div>
                         <div class="experience__desc-subtitle subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta dui.</p></div>
                         <div class="experience__desc-btn btn btn--blue"><button class="btn btn--blue">ORder now</button></div>
                     </div>
                 </div>
             </div>
         </section>
+        
+    </main>
+    <footer class="footer">
         <section class="support">
             <div class="container">
-                <div class="support__desc">
-                    <div class="support__desc-text test"><p>Simple & Modern</p></div>
-                    <div class="support__desc-title title"><h2>Benefits You Get When&nbsp;Using Our Services</h2></div>
-                    <div class="support__desc-subtitle subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta dui.</p></div>
-                    <div class="support__desc-form">
-                        <input class="support__desc-input" type="email" placeholder="Enter your Email Address">
-                        <div class="support__desc-btn"><button class="btn btn--blue">Subscribe</button></div>
+                <div class="support__wrap">
+                    <div class="support__desc">
+                        <div class="support__desc-title title"><h2>Support Your Workspace</h2></div>
+                        <div class="support__desc-subtitle subtitle"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta dui. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pretium semper porta dui.</p></div>
+                    </div>
+                    <form class="support__form">
+                        <fieldset class="support__form-wrap">
+                            <p class="support__form-info">
+                                <input class="support__form-field" type="email" placeholder="Enter your Email Address">
+                                <button class="support__form-submit btn btn--blue" type="submit">Subscribe</button>    
+                            </p>
+                        </fieldset>
+                    </form>
+                </div>
+            </div>
+        </section>
+        <section class="items">
+            <div class="container">
+                <div class="footer__wrapper">
+                    <div class="footer__items">
+                        <div class="footer__item-title">PRODUCTS</div>
+                        <div class="footer__item">Red Wine</div>
+                        <div class="footer__item">White Wine</div>
+                        <div class="footer__item">Others</div>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item-title">ABOUT US</div>
+                        <div class="footer__item">Our Story</div>
+                        <div class="footer__item">Materials</div>
+                        <div class="footer__item">Contact</div>
+                        <div class="footer__item">As seen on</div>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item-title">SUPPORT</div>
+                        <div class="footer__item">Terms of service</div>
+                        <div class="footer__item">Privacy Policy</div>
+                        <div class="footer__item">Shipping & Returns</div>
+                    </div>
+                    <div class="footer__items">
+                        <div class="footer__item-title">NEED HELP</div>
+                        <div class="footer__item">We’re available by phone 123-456-789 Monday till Friday 10 to 6 EST</div>
                     </div>
                 </div>
             </div>
         </section>
-    </main>
-    <footer class="footer">
-        <div class="container">
-            <div class="footer__wrapper">
-                <div class="footer__items">
-                    <div class="footer__item-title">PRODUCTS</div>
-                    <div class="footer__item">Red Wine</div>
-                    <div class="footer__item">White Wine</div>
-                    <div class="footer__item">Others</div>
-                </div>
-                <div class="footer__items">
-                    <div class="footer__item-title">ABOUT US</div>
-                    <div class="footer__item">Our Story</div>
-                    <div class="footer__item">Materials</div>
-                    <div class="footer__item">Contact</div>
-                    <div class="footer__item">As seen on</div>
-                </div>
-                <div class="footer__items">
-                    <div class="footer__item-title">SUPPORT</div>
-                    <div class="footer__item">Terms of service</div>
-                    <div class="footer__item">Privacy Policy</div>
-                    <div class="footer__item">Shipping & Returns</div>
-                </div>
-                <div class="footer__items">
-                    <div class="footer__item-title">NEED HELP</div>
-                    <div class="footer__item">We’re available by phone 123-456-789 Monday till Friday 10 to 6 EST</div>
-                </div>
-            </div>
-        </div>
+        
     </footer>
 </body>
 </html>
